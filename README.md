@@ -28,3 +28,44 @@ Default output format [None]: ENTER
 aws s3 sync s3://goorooapp/production/cooking . => Download
 aws s3 sync . s3://goorooapp/production/ => Upload folder to s3
 ```
+
+#### Create new project
+
+1.Project
+```
+mkdir project_name
+touch .ruby-version
+touch .ruby-gemset
+gem install rails --no-ri --no-rdoc
+rails new .
+rm -rf test
+```
+
+2.git Ignore
+
+```
+# Ignore mac stupid DS_Store
+*.DS_Store
+
+.env
+```
+
+3.Config db
+
+```
+default: &default
+  adapter: postgresql
+  host: localhost
+
+development:
+  <<: *default
+  database: pro_test_development
+
+test:
+  <<: *default
+  database: pro_test_test
+
+production:
+  <<: *default
+  database: pro_test_production
+```
