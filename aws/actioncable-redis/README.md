@@ -5,8 +5,6 @@
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
 ```
 ### Config action cable
-
-#### Config in app
 ```
 config/environments/<env-name>.rb
 config.action_cable.allowed_request_origins = [Rails.application.secrets.domain]
