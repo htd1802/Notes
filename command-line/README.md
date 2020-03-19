@@ -24,4 +24,5 @@ $ kill -9 $(lsof -i tcp:3000 -t)
 $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/s
 $ open ~/.bash_profile
 $ export EDITOR='s -w'
+$ source ~/.bash_profile
 ```
