@@ -1,13 +1,4 @@
 # Notes
-
-#### Run db seed on aws
-
-```
-[root@ip-172-31-22-35 ~]# su gooroo
-[gooroo@ip-172-31-22-35 root]$ cd ~/production/current/
-[gooroo@ip-172-31-22-35 current]$ RAILS_ENV=production bundle exec rake db:seed
-```
-
 #### Backup s3 bucket
 
 ```
@@ -31,7 +22,7 @@ aws s3 sync . s3://goorooapp/production/ => Upload folder to s3
 
 #### Create new project
 
-1.Project
+##### 1. Project
 ```
 mkdir project_name
 touch .ruby-version
@@ -41,7 +32,7 @@ rails new .
 rm -rf test
 ```
 
-2.git Ignore
+##### 2. git Ignore
 
 ```
 # Ignore mac stupid DS_Store
@@ -50,7 +41,7 @@ rm -rf test
 .env
 ```
 
-3.Config db
+##### 3. Config databse
 
 ```
 default: &default
