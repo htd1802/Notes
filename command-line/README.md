@@ -26,3 +26,7 @@ $ open ~/.bash_profile
 $ export EDITOR='s -w'
 $ source ~/.bash_profile
 ```
+#### Fix connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+```
+$ rm /usr/local/var/postgres/postmaster.pid
+```
