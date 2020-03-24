@@ -11,7 +11,7 @@ $ sudo -u postgres createdb -O username database_name
 ```
 #### SYNC file from server
 ```
-$ rsync -avz --progress agilelab@13.250.205.163:/home/agilelab/monat_producdbn_2020_03_19_03_08_01.zip ~/Desktop/ (Show persent)
+$ rsync -avz --progress agilelab@13.250.205.163:/home/agilelab/monat_producdbn_2020_03_19_03_08_01.zip ~/Desktop/
 
 $ scp agilelab@13.250.205.163:/home/agilelab/backupdb/monat_staging_2019_10_04_03_24_01.zip ~/Documents
 ```
