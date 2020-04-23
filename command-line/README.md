@@ -6,8 +6,8 @@ $ psql charles_monat_development ~/Data/monat/monat_producdbn_2020_03_19_03_08_0
 ```
 #### Create databse
 ```
-$ sudo -u postgres createuser -P username
-$ sudo -u postgres createdb -O username database_name
+$ sudo -u postgres createuser -P agilelab
+$ sudo -u postgres createdb -O agilelab database_name
 ```
 #### SYNC file from server
 ```
