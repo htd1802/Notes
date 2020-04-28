@@ -30,3 +30,12 @@ $ source ~/.bash_profile
 ```
 $ rm /usr/local/var/postgres/postmaster.pid
 ```
+#### Fix nokogiri
+```
+$ sudo apt-get install libxslt-dev libxml2-dev
+```
+If you still receive the error, you may be missing a compiler toolchain:
+
+```
+$ sudo apt-get install build-essential
+```
