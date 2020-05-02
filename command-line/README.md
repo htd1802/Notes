@@ -34,8 +34,11 @@ $ rm /usr/local/var/postgres/postmaster.pid
 ```
 $ sudo apt-get install libxslt-dev libxml2-dev
 ```
-If you still receive the error, you may be missing a compiler toolchain:
-
+##### If you still receive the error, you may be missing a compiler toolchain:
 ```
 $ sudo apt-get install build-essential
+```
+#### Fix ruby 2.7 warning
+```
+$ export RUBYOPT='-W:no-deprecated'
 ```
