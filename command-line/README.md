@@ -42,3 +42,9 @@ $ sudo apt-get install build-essential
 ```
 $ export RUBYOPT='-W:no-deprecated'
 ```
+#### Fix locale when cap deploy
+```
+# ~/.zshrc
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.US-ASCII
+```
