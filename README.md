@@ -16,8 +16,8 @@ AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Default region name [None]: us-west-2
 Default output format [None]: ENTER
 
-aws s3 sync s3://goorooapp/production/cooking . => Download
-aws s3 sync . s3://goorooapp/production/ => Upload folder to s3
+aws s3 sync s3://{bucket-name}/production/cooking . => Download
+aws s3 sync . s3://{bucket-name}/production/ => Upload folder to s3
 ```
 
 #### Create new project
