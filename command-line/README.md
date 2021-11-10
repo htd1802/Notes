@@ -11,6 +11,11 @@ $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U hoangdoan -d 
 $ psql charles_monat_development ~/Data/monat/monat_producdbn_2020_03_19_03_08_01.sql
 ```
 #### Create databse
+##### Mysql
+```
+$ mysql -u root -p -e "CREATE DATABASE db_name"
+```
+##### Postgres
 ```
 $ sudo -u postgres createuser -P agilelab
 $ sudo -u postgres createdb -O agilelab database_name
