@@ -1,10 +1,20 @@
 #### Export database
+##### Mysql
+```
+$ mysqldump -u root -p db_name > /var/www/{filename}.sql
+```
+##### Postgres
 ```
 $ pg_dump --no-acl --no-owner -h luwjistik-prod.ccrx6kjb18ik.us-east-1.rds.amazonaws.com -U postgres -d postgres > ~/Downloads/luwjistik-prod-14-10-2021.dump
 
 $ pg_dump -U hoangdoan -h localhost luwjistik_development >> ~/Downloads/luwjistik_development_2021_10_07.sql
 ```
 #### Import database
+##### Mysql
+```
+$ mysql -u root -p halogen_development < ~/Data/Halogen/db/halogen-uat-10-11-2021.sql
+```
+##### Postgres
 ```
 $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U hoangdoan -d charles_monat_development ~/Data/monat/monat_producdbn_2020_03_19_03_08_01.dump
 
