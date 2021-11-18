@@ -6,7 +6,8 @@ $ mysqldump -u root -p db_name > /var/www/{filename}.sql
 ##### Postgres
 ```
 $ pg_dump --no-acl --no-owner -h luwjistik-prod.ccrx6kjb18ik.us-east-1.rds.amazonaws.com -U postgres -d postgres > ~/Downloads/luwjistik-prod-14-10-2021.dump
-
+```
+```
 $ pg_dump -U hoangdoan -h localhost luwjistik_development >> ~/Downloads/luwjistik_development_2021_10_07.sql
 ```
 #### Import database
